@@ -3,8 +3,6 @@ package com.vinsys.devops;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import javax.xml.ws.Response;
-
 @RestController
 public class LoginAPI {
 
