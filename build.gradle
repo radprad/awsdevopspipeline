@@ -32,3 +32,14 @@ jacocoTestReport {
 		html.destination file("${buildDir}/jacocoHtml")
 	}
 }
+
+
+uploadArchives {
+	repositories {
+		mavenDeployer {
+			repository(url: "https://localhost:8443/repository/myrepo1/") {
+				authentication(userName: "admin", password: "admin123")
+			}
+		}
+	}
+}
